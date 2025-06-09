@@ -22,7 +22,7 @@ protocol Volunteer: ObservableObject {
 class SafeWalkVolunteer: Volunteer {
     var name: String
     var age: Int
-    var maxHours {
+    var maxHours: Int {
         get {
             return (age < 18 ? 1 : 3)
         }
